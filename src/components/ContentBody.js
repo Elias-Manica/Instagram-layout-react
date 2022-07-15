@@ -1,4 +1,5 @@
 import Post from "./Post";
+import Suggest from "./Suggest";
 
 export default function ContentBody() {
   const storys = [
@@ -32,7 +33,7 @@ export default function ContentBody() {
     },
     {
       url: "https://elias-manica.github.io/Instagram-layout/imagens/wawawiwa.png",
-      name: "wawa wiwa",
+      name: "wawawiwa",
     },
     {
       url: "https://pi.tedcdn.com/r/pl.tedcdn.com/social/ted-logo-fb.png?v=wAff13s?",
@@ -79,65 +80,7 @@ export default function ContentBody() {
             <div>Ver tudo</div>
           </div>
 
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="assets/img/bad.vibes.memes.svg" />
-              <div class="texto">
-                <div class="nome">bad.vibes.memes</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="assets/img/chibirdart.svg" />
-              <div class="texto">
-                <div class="nome">chibirdart</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="assets/img/razoesparaacreditar.svg" />
-              <div class="texto">
-                <div class="nome">razoesparaacreditar</div>
-                <div class="razao">Novo no Instagram</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="assets/img/adorable_animals.svg" />
-              <div class="texto">
-                <div class="nome">adorable_animals</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
-
-          <div class="sugestao">
-            <div class="usuario">
-              <img src="assets/img/smallcutecats.svg" />
-              <div class="texto">
-                <div class="nome">smallcutecats</div>
-                <div class="razao">Segue você</div>
-              </div>
-            </div>
-
-            <div class="seguir">Seguir</div>
-          </div>
+          <Suggest />
         </div>
 
         <div class="links">

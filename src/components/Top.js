@@ -5,7 +5,10 @@ export default function Top() {
         <div class="logo">
           <ion-icon name="logo-instagram"></ion-icon>
           <div class="separador"></div>
-          <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-10.png" />
+          <img
+            src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-10.png"
+            alt=""
+          />
         </div>
 
         <div class="logo-mobile">
@@ -13,7 +16,7 @@ export default function Top() {
         </div>
 
         <div class="instagram-mobile">
-          <img src="assets/img/logo.png" />
+          <img src="assets/img/logo.png" alt="" />
         </div>
 
         <div class="pesquisa">

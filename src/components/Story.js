@@ -41,11 +41,12 @@ export default function Story() {
   return storys.map((item) => (
     <div class="story">
       <div class="imagem">
-        <img src={item.url} />
+        <img src={item.url} alt="" />
       </div>
       <img
         class="imagem posicao"
         src="https://elias-manica.github.io/Instagram-layout/imagens/stories_background-removebg-preview.png"
+        alt=""
       />
       <div class="usuario">{item.name}</div>
     </div>

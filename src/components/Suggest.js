@@ -37,7 +37,7 @@ export default function Suggest() {
       {suggestProfilesAPI.map((dataUser) => (
         <div class="sugestao">
           <div class="usuario">
-            <img src={dataUser.imgUser} />
+            <img src={dataUser.imgUser} alt="" />
             <div class="texto">
               <div class="nome">{dataUser.nameUser}</div>
               <div class="razao">{dataUser.reasonUser}</div>

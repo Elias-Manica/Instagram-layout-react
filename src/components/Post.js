@@ -41,7 +41,7 @@ export default function Post() {
         <div class="post">
           <div class="topo">
             <div class="usuario">
-              <img src={item.imgUser} />
+              <img src={item.imgUser} alt="" />
               {item.nameUser}
             </div>
             <div class="acoes">
@@ -50,7 +50,7 @@ export default function Post() {
           </div>
 
           <div class="conteudo">
-            <img src={item.imgPost} />
+            <img src={item.imgPost} alt="" />
           </div>
 
           <div class="fundo">
@@ -66,7 +66,7 @@ export default function Post() {
             </div>
 
             <div class="curtidas">
-              <img src={item.imgLikedBy} />
+              <img src={item.imgLikedBy} alt="" />
               <div class="texto">
                 Curtido por <strong>{item.likedBy}</strong> e{" "}
                 <strong>outras {item.likedOthers} pessoas</strong>

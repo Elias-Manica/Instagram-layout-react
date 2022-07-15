@@ -5,7 +5,7 @@ export default function Top() {
         <div class="logo">
           <ion-icon name="logo-instagram"></ion-icon>
           <div class="separador"></div>
-          <img src="assets/img/logo.png" />
+          <img src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo-10.png" />
         </div>
 
         <div class="logo-mobile">

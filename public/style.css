@@ -57,6 +57,11 @@ body {
   margin: 0 10px;
 }
 
+.logo img {
+  width: 100%;
+  height: 22px;
+}
+
 .navbar .pesquisa input {
   width: 215px;
   height: 28px;
@@ -228,7 +233,7 @@ body {
   align-items: center;
 }
 
-.sidebar > .usuario img {
+.usuario img {
   width: 56px;
   height: 56px;
   border-radius: 50%;

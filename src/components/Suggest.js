@@ -32,19 +32,21 @@ export default function Suggest() {
     },
   ];
 
-  const suggestProfilesJSX = suggestProfilesAPI.map((dataUser) => (
-    <div class="sugestao">
-      <div class="usuario">
-        <img src={dataUser.imgUser} />
-        <div class="texto">
-          <div class="nome">{dataUser.nameUser}</div>
-          <div class="razao">{dataUser.reasonUser}</div>
+  return (
+    <div>
+      {suggestProfilesAPI.map((dataUser) => (
+        <div class="sugestao">
+          <div class="usuario">
+            <img src={dataUser.imgUser} />
+            <div class="texto">
+              <div class="nome">{dataUser.nameUser}</div>
+              <div class="razao">{dataUser.reasonUser}</div>
+            </div>
+          </div>
+
+          <div class="seguir">Seguir</div>
         </div>
-      </div>
-
-      <div class="seguir">Seguir</div>
+      ))}
     </div>
-  ));
-
-  return <div>{suggestProfilesJSX}</div>;
+  );
 }

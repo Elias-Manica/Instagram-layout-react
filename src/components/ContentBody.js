@@ -2,6 +2,8 @@ import Post from "./Post";
 import Suggest from "./Suggest";
 import Story from "./Story";
 import User from "./User";
+import Bottom from "./Bottom";
+import Copyright from "./Copyright";
 
 export default function ContentBody() {
   return (
@@ -33,13 +35,9 @@ export default function ContentBody() {
           <Suggest />
         </div>
 
-        <div class="links">
-          Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
-          Localizações • Contas mais relevantes • Hashtags • Idioma
-        </div>
-
-        <div class="copyright">© 2021 INSTAGRAM DO FACEBOOK</div>
+        <Copyright />
       </div>
+      <Bottom />
     </div>
   );
 }

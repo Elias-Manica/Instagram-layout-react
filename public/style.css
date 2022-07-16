@@ -337,6 +337,7 @@ body {
 
 .acoes ion-icon[name="heart"] {
   color: red;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 935px) {

@@ -13,8 +13,6 @@ export default function Icons() {
             } else {
               setTypeButtom("heart");
             }
-
-            console.log("clicou");
           }}
         ></ion-icon>
         <ion-icon name="chatbubble-outline"></ion-icon>

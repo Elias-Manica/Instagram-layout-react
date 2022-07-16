@@ -38,6 +38,8 @@ export default function Post() {
     },
   ];
 
+  const [typeButtom, setTypeButtom] = React.useState("heart-outline");
+
   return (
     <div class="posts">
       {post.map((item) => (
@@ -53,7 +55,17 @@ export default function Post() {
           </div>
 
           <div class="conteudo">
-            <img src={item.imgPost} alt="" />
+            <img
+              src={item.imgPost}
+              alt=""
+              onClick={() => {
+                if (typeButtom === "heart") {
+                  setTypeButtom("heart-outline");
+                } else {
+                  setTypeButtom("heart");
+                }
+              }}
+            />
           </div>
 
           <div class="fundo">

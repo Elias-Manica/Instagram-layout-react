@@ -218,6 +218,10 @@ body {
   margin-right: 10px;
 }
 
+.curtidas img {
+  border-radius: 50%;
+}
+
 .post:last-child {
   margin-bottom: 18px;
 }
@@ -415,5 +419,10 @@ body {
   .instagram-mobile {
     position: relative;
     top: 4px;
+  }
+
+  .instagram-mobile img {
+    width: 100%;
+    height: 22px;
   }
 }

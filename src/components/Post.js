@@ -2,6 +2,7 @@ import React from "react";
 
 export default function Post(props) {
   const [typeButtom, setTypeButtom] = React.useState("heart-outline");
+  const [typeLike, setTypeLike] = React.useState("normal");
 
   return (
     <div class="posts">
@@ -17,13 +18,20 @@ export default function Post(props) {
         </div>
 
         <div class="conteudo">
-          <img
-            src={props.imgPost}
-            alt=""
-            onClick={() => {
-              setTypeButtom("heart");
-            }}
-          />
+          <div className="positionHeart">
+            <div className={typeLike}></div>
+            <img
+              src={props.imgPost}
+              alt=""
+              onClick={() => {
+                setTypeButtom("heart");
+                setTypeLike("heart");
+                setTimeout(() => {
+                  setTypeLike("normal");
+                }, 700);
+              }}
+            />
+          </div>
         </div>
 
         <div class="fundo">
@@ -34,6 +42,7 @@ export default function Post(props) {
                 onClick={() => {
                   if (typeButtom === "heart") {
                     setTypeButtom("heart-outline");
+                    setTypeLike("normal");
                   } else {
                     setTypeButtom("heart");
                   }

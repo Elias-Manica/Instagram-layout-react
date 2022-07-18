@@ -6,6 +6,15 @@ import Bottom from "./Bottom";
 import Copyright from "./Copyright";
 
 export default function ContentBody() {
+  const dataUser = [
+    {
+      name: "catanacomics",
+      profileName: "Catana",
+      urlImgUser:
+        "https://elias-manica.github.io/Instagram-layout/imagens/fotos-comprovam-que-cachorros-sao-os-pets-mais-engracados-20032018161340130.jpeg",
+    },
+  ];
+
   return (
     <div class="corpo">
       <div class="esquerda">
@@ -20,11 +29,13 @@ export default function ContentBody() {
       </div>
 
       <div class="sidebar">
-        <User
-          name="catanacomics"
-          profileName="Catana"
-          urlImgUser="https://elias-manica.github.io/Instagram-layout/imagens/fotos-comprovam-que-cachorros-sao-os-pets-mais-engracados-20032018161340130.jpeg"
-        />
+        {dataUser.map((item) => (
+          <User
+            name={item.name}
+            profileName={item.profileName}
+            urlImgUser={item.urlImgUser}
+          />
+        ))}
 
         <div class="sugestoes">
           <div class="titulo">

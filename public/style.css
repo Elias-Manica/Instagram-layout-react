@@ -340,6 +340,10 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+.like {
+  opacity: 0.2;
+}
+
 @media (max-width: 935px) {
   .sidebar {
     display: none;

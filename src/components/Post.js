@@ -57,12 +57,11 @@ export default function Post() {
             <img
               src={item.imgPost}
               alt=""
-              onClick={() => {
-                if (typeButtom === "heart") {
-                  setTypeButtom("heart-outline");
-                } else {
-                  setTypeButtom("heart");
-                }
+              onClick={(e) => {
+                console.log(e);
+                console.log(e.target.src);
+                console.log(item.imgPost);
+                setTypeButtom("heart");
               }}
             />
           </div>
@@ -72,7 +71,8 @@ export default function Post() {
               <div>
                 <ion-icon
                   name={typeButtom}
-                  onClick={() => {
+                  onClick={(e) => {
+                    console.log(e);
                     if (typeButtom === "heart") {
                       setTypeButtom("heart-outline");
                     } else {

@@ -2,13 +2,15 @@
 
 A responsive website that simulate the layout of Instagram.
 
-print
+![Captura de tela de 2022-09-01 18-50-52](https://user-images.githubusercontent.com/103606213/188019279-d2342ff4-4f0c-46c0-9ab8-63f5f2f245ad.png)
 
 Try it out now at https://instagram-layout-react.vercel.app/
 
 ## About this Project
 
-This is a page that simulate the home page layout of Instagram
+This is a page that simulate the home page layout of Instagram. Below are the implemented features:
+
+- Like on post
 
 ## Why?
 
